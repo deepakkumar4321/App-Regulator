@@ -8,15 +8,15 @@ namespace WPEFramework {
         class AppRegulator : public PluginHost::IPlugin, public PluginHost::JSONRPC {
         public:
             AppRegulator();
-            virtual ~CamMotionMonitor();
+            virtual ~AppRegulator();
             AppRegulator(const AppRegulator&) = delete;
             AppRegulator& operator=(const AppRegulator&) = delete;
 
-            virtual uint32_t sendPath(const JsonObject& parameters, JsonObject& response);
+            virtual uint32_t getTime(const JsonObject& parameters, JsonObject& response);
 
-            virtual void onMotionCaptured();
+            virtual void timeCheck();
 
-            BEGIN_INTERFACE_MAP(CamMotionMonitor)
+            BEGIN_INTERFACE_MAP(AppRegulator)
             INTERFACE_ENTRY(PluginHost::IPlugin)
             INTERFACE_ENTRY(PluginHost::IDispatcher)
             END_INTERFACE_MAP
@@ -29,16 +29,16 @@ namespace WPEFramework {
             void setApiVersionNumber(uint32_t apiVersion) {apiVersionNumber = apiVersion;};
 
             
-            static CamMotionMonitor& getInstance();
+            static AppRegulator& getInstance();
 
         private:
             uint32_t apiVersionNumber;
-            static CamMotionMonitor* instance;
+            static AppRegulator* instance;
 
 
-            std::string m_ipAddress;
-            std::string m_imagePath;
-            std::string m_fileName;
+            // Variables yet to be decided
+            // Variables yet to be decided
+            // Variables yet to be decided 
         };
     } 
 }
