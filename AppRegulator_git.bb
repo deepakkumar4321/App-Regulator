@@ -6,7 +6,7 @@ PV = "1.0+git${SRCPV}"
 
 
 
-SRC_URI = "git://github.com"
+SRC_URI = "git://github.com/deepakkumar4321/App-Regulator.git"
 
 SRCREV = "${AUTOREV}"
 
