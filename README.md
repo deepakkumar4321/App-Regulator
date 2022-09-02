@@ -20,6 +20,6 @@ WpeFramework --->  API Calls  ----> Functions {
 
 -> getTime() :-> This function will record the input time set by the user. 
 
--> lockingPeriod () :> This function will decide how much time the app will be closed after reciveing alert.
+-> lockingPeriod () :> This function will decide how long the app will be closed after reciveing alert.
 
 ->eventHandler() :-> This function will handle the background running time and process.
