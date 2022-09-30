@@ -12,7 +12,7 @@ After time limit user will get a Notification regarding time limit.
 
 ## Problem Statement:
 
-Binge Watch Problem.
+Binge Watch.
 Teenager Time spending.
 
 ## Workflow:
